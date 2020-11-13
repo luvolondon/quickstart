@@ -20,7 +20,7 @@ The image shown is an individual image per user, loaded from the "images" folder
 This only works with a nginx reverse proxy setup like this:
 ```javascript
 location /enter {
-      root <<our path to foundry data>/Data/modules/quickstart;
+      root <absolute path to foundry data>/Data/modules/quickstart;
       try_files $uri  /modules/quickstart/index.html;
 }
 location /enter/index.html {
