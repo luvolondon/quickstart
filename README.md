@@ -5,6 +5,7 @@ For a start this only is a poc to have a direct login page. Later additions will
 1) Direct Login Page
 
 Send new users an URL to show them a nice intro page and let them enter the game with a single button click.
+
 ![Sample direct login page](https://github.com/luvolondon/quickstart/blob/main/screen1.jpg)
 
 
@@ -17,7 +18,7 @@ https://myfoundry.example.com/enter?69YY
 The image shown is an individual image per user, loaded from the "images" folder. Images get the filename identical to the 4 first digits ("69YY" in the example above).
 
 This only works with a nginx reverse proxy setup like this:
-
+```javascript
 location /enter {
       root <<our path to foundry data>/Data/modules/quickstart;
       try_files $uri  /modules/quickstart/index.html;
@@ -25,4 +26,4 @@ location /enter {
 location /enter/index.html {
      expires 30s;
 }
-   
+  ``` 
