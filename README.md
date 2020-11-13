@@ -5,6 +5,8 @@ For a start this only is a poc to have a direct login page. Later additions will
 1) Direct Login Page
 
 Send new users an URL to show them a nice intro page and let them enter the game with a single button click.
+![Sample direct login page](https://github.com/luvolondon/quickstart/raw/master/screen1.jpg)
+
 
 The URL has the syntax https://<hostname>/enter?<first 4 digits of the user-id>
   
