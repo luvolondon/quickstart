@@ -1,5 +1,6 @@
 # quickstart
-A collection of tools for games with players new to rpgs.
+A collection of tools to run games for players new to rpgs.
+For a start this only is a poc to have a direct login page. Later additions will help to speed up initial character and game selection with story cards and more.
 
 1) Direct Login Page
 
