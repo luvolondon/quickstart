@@ -9,7 +9,7 @@ Send new users an URL to show them a nice intro page and let them enter the game
 ![Sample direct login page](https://github.com/luvolondon/quickstart/blob/main/screen1.jpg)
 
 
-The URL has the syntax https://<hostname>/enter?<first 4 digits of the user-id>
+The URL has the syntax https://<i>hostname</i>/enter?<first 4 digits of the user-id>
   
 So if the id of a user is "69YYrJOEWAtB384C" and the FoundryVTT hostname is "myfoundry.example.com" the direct-login URL for this player is
 
