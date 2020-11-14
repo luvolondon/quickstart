@@ -40,3 +40,10 @@ server {
   ``` 
 The above also adds a language code to the URL so that the login page can be shown with localized text. This is still work-in-progress.
 
+Change list:
+
+v0.1.1:
+Moved login stuff to subfolder login. Add language detection and password.
+
+v0.1:
+Initial release
