@@ -43,7 +43,7 @@ server {
 The above also adds a language code to the URL so that the login page can be shown with localized text. 
 
 
-2) Game setup steps
+2) Game setup steps (still work-in-progress)
 
 The component does control the ui of GM´s and player´s screens based on which step is active:
  - "Intro": Shows an intro image, removes all unneeded UI and allows the GM to welcome the players in A/V chat
