@@ -52,6 +52,8 @@ The component does control the ui of GM´s and player´s screens based on which 
 
 In GM view the GM can move from one step to another with a control window.
   
+![Step control for GM](https://github.com/luvolondon/quickstart/blob/main/screen2.jpg)
+
 
 Change list:
 
