@@ -1,0 +1,78 @@
+.vtt #controls,
+.vtt #navigation,
+.vtt #hotbar,
+.vtt #player-config
+{
+    display:none !important;
+}
+
+.vtt #sidebar a[data-tab="combat"],
+.vtt #sidebar a[data-tab="actors"],
+.vtt #sidebar a[data-tab="items"],
+.vtt #sidebar a[data-tab="journal"],
+.vtt #sidebar a[data-tab="tables"],
+.vtt #sidebar a[data-tab="playlists"],
+.vtt #sidebar a[data-tab="compendium"],
+.vtt #sidebar #chat-controls,
+.vtt #notifications,
+.vtt #pause,
+.vtt #loading,
+.vtt #board
+{
+    display:none !important;
+}
+
+.vtt #sidebar [data-tab="settings"] [data-action="modules"]
+{
+    display:none !important;
+}
+
+.vtt.quickstart_game #controls,
+.vtt.quickstart_game #navigation,
+.vtt.quickstart_game #hotbar,
+.vtt.quickstart_game #player-config
+{
+    display:flex !important;
+}
+
+.vtt.quickstart_game #sidebar a[data-tab="combat"],
+.vtt.quickstart_game #sidebar a[data-tab="actors"],
+.vtt.quickstart_game #sidebar a[data-tab="journal"],
+.vtt.quickstart_game #sidebar a[data-tab="tables"],
+.vtt.quickstart_game #sidebar a[data-tab="playlists"],
+.vtt.quickstart_game #sidebar a[data-tab="compendium"],
+.vtt.quickstart_game #sidebar #chat-controls,
+.vtt.quickstart_game #notifications,
+.vtt.quickstart_game #pause,
+.vtt.quickstart_game #loading,
+.vtt.quickstart_game #board
+{
+    display:block !important;
+}
+
+.vtt.quickstart_game #sidebar [data-tab="settings"] [data-action="modules"]
+{
+    display:inline-block !important;
+}
+
+#quickstart_intro {
+    background-image: url(../images/intro/intro.jpg);
+    background-size: cover;
+    position:absolute;
+    width:100%;
+    height:100%;
+    
+}
+
+#quickstart_slideshow {
+    background-image: url(../images/slideshow/slide1.jpg);
+    background-size: cover;
+    position:absolute;
+    width:100%;
+    height:100%;
+    
+}
+
+#quickstart_gm .dialog-button {
+    margin-bottom:3px;
+}

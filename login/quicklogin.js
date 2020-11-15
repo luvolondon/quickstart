@@ -41,6 +41,7 @@ $( document ).ready(function() {
 					}  
 				});
 				if (user) { 
+					console.log("User:",user);
 					$('h1').html( "Hi " + username + "! " + i18n.localize("Quickstart.title") + " \"" + hlist[0].innerHTML + "\"");
 					$('#titleimg').attr("src","../../../modules/quickstart/login/images/" + path + ".jpg");
 					$("button").html('<i class="fas fa-check"></i> ' + i18n.localize("Quickstart.login"));
