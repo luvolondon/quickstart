@@ -2,8 +2,8 @@
 A collection of tools to run games for players new to rpgs.
 
 Atm the module contains two tools:
-1) Direct Login Page
-2) Game setup steps
+a) Direct Login Page
+b) Game setup steps
 
 1) Direct Login Page
 
