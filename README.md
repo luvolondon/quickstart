@@ -53,7 +53,7 @@ The component does control the ui of GM´s and player´s screens based on which 
  - "tutorial": setup a short tutorial scene with rules and ui explanation
  - "game": Move to the real game 
 
-In GM view the GM can move from one step to another with a control window.
+In GM view the GM can move from one step to another with a control window. The player´s screen will change accordingly.
   
 ![Step control for GM](https://github.com/luvolondon/quickstart/blob/main/screens/screen2.jpg)
 
