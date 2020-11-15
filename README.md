@@ -10,7 +10,7 @@ b) Game setup steps
 
 Send new users an URL to show them a nice intro page and let them enter the game with a single button click.
 
-![Sample direct login page](https://github.com/luvolondon/quickstart/blob/main/screen1.jpg)
+![Sample direct login page](https://github.com/luvolondon/quickstart/blob/main/screens/screen1.jpg)
 
 
 The URL has the syntax https://<i>hostname</i>/enter/ < first 4 digits of the user-id >< player access key >.
@@ -55,7 +55,7 @@ The component does control the ui of GM´s and player´s screens based on which 
 
 In GM view the GM can move from one step to another with a control window.
   
-![Step control for GM](https://github.com/luvolondon/quickstart/blob/main/screen2.jpg)
+![Step control for GM](https://github.com/luvolondon/quickstart/blob/main/screens/screen2.jpg)
 
 
 Change list:
