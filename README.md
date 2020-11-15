@@ -40,7 +40,7 @@ The above also adds a language code to the URL so that the login page can be sho
 
 Change list:
 
-v0.1.2:
+v0.1.3:
 Moved login stuff to subfolder login. Add language detection and files. Add player access key.
 
 v0.1:
