@@ -19,7 +19,7 @@ class Quickstart_Intro extends Application {
 class Quickstart_Slideshow extends Application {
     constructor( options) {
       super( options);
-      
+      this.show = null;
     }
     static get defaultOptions() {
 
@@ -53,7 +53,7 @@ class Quickstart_GM extends Application {
 class Quickstart {
     constructor() {
         
-        this.step = null;
+        this.step = null;       
         this.setStep(game.settings.get("quickstart", "step"));
 
       }
@@ -73,6 +73,24 @@ class Quickstart {
         if (s === "slideshow") {
             quickstart_slideshow = new Quickstart_Slideshow();
             quickstart_slideshow.render(true);
+            
+            Hooks.on("renderQuickstart_Slideshow", (app) => {
+                app.show = new Reveal( document.querySelector( '.reveal' ), {
+                    embedded: true,
+                //    keyboardCondition: 'focused' 
+                } );
+                app.show.initialize();
+                if (game.user.isGM) { 
+                    app.show.on( 'slidechanged', event => {
+                        game.settings.set("quickstart", "substep",event.indexh);
+                        console.log("INDEX SEND:",event.indexh);
+                        // event.previousSlide, event.currentSlide, event.indexh, event.indexv
+                    } );
+                }
+            });
+            
+
+			
         } else {
             if (quickstart_slideshow) {
                 quickstart_slideshow.close();
@@ -83,6 +101,14 @@ class Quickstart {
     stepChanged() {
         const cmd = game.settings.get("quickstart", "step");
         this.setStep(cmd);
+    }
+    substepChanged() {
+        if (!game.user.isGM) { 
+            let indexh = game.settings.get("quickstart", "substep");
+            console.log("INDEX",indexh);
+            if (quickstart_slideshow.show != null)
+                quickstart_slideshow.show.slide(indexh,1,1);
+        }
     }
 }
 
@@ -115,12 +141,22 @@ Hooks.on("init", () => {
           },
         onChange: () => quickstart.stepChanged(),
       });
-      quickstart = new Quickstart();
-
+      game.settings.register("quickstart", "substep", {
+        name: "Current substep",
+        hint: "Current substep in current step",
+        scope: "world",
+        config: false,
+        default: 1,
+        type: Number,
+        
+        onChange: () => quickstart.substepChanged(),
+      });
+      
   });
 
 Hooks.on("ready", () => {
-    
+    quickstart = new Quickstart();
+
     if (game.user.isGM) {
         //$('body').addClass("quickstart_play");
         const quickstart_gm = new Quickstart_GM();
