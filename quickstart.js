@@ -63,22 +63,38 @@ class Quickstart {
         }
         this.step = s;
         if (s === "intro") {
-            quickstart_intro = new Quickstart_Intro();
-            quickstart_intro.render(true);
+            if (quickstart_intro == null) {
+                quickstart_intro = new Quickstart_Intro();
+                quickstart_intro.render(true);
+            }
         } else {
             if (quickstart_intro) {
                 quickstart_intro.close();
             }
         } 
         if (s === "slideshow") {
-            quickstart_slideshow = new Quickstart_Slideshow();
-            quickstart_slideshow.render(true);
-            
+            if (quickstart_slideshow == null) {
+                quickstart_slideshow = new Quickstart_Slideshow();
+                quickstart_slideshow.render(true);
+            }
+
             Hooks.on("renderQuickstart_Slideshow", (app) => {
-                app.show = new Reveal( document.querySelector( '.reveal' ), {
-                    embedded: true,
-                //    keyboardCondition: 'focused' 
-                } );
+                let options = {
+                    embedded: true
+                };
+                if (!game.user.isGM) {
+                    options =
+                    {
+                        embedded: true,
+                        controls: false,                  
+                        controlsTutorial: false,
+                        progress: false,                  
+                        keyboard: false,              
+                        overview: false,
+                        touch: false
+                    }                
+                };    
+                app.show = new Reveal( document.querySelector( '.reveal' ), options);
                 app.show.initialize();
                 if (game.user.isGM) { 
                     app.show.on( 'slidechanged', event => {
@@ -155,7 +171,10 @@ Hooks.on("init", () => {
   });
 
 Hooks.on("ready", () => {
-    quickstart = new Quickstart();
+    if (quickstart == null) {
+        quickstart = new Quickstart();
+
+    }
 
     if (game.user.isGM) {
         //$('body').addClass("quickstart_play");
