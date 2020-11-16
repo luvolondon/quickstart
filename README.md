@@ -60,6 +60,9 @@ In GM view the GM can move from one step to another with a control window. The p
 
 Change list:
 
+v0.1.6:
+Bug fixes. Remove Slideshow controls for non-GM players
+
 v0.1.5: 
 Added revealjs library for slideshows. Test slideshow in step "Slideshow".
 
