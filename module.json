@@ -3,7 +3,7 @@
   "title": "Quickstart Tools",
   "description": "Tools to help run a game with players new to rpgs",
   "author": "Luvolondon",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "styles": [
     "styles/styles.css",
     "revealjs/reset.css",
@@ -13,7 +13,7 @@
   "packs": [],
   "url": "https://github.com/luvolondon/quickstart",
   "manifest": "https://raw.githubusercontent.com/luvolondon/quickstart/main/module.json",
-  "download": "https://github.com/luvolondon/quickstart/archive/v0.1.6.zip",
+  "download": "https://github.com/luvolondon/quickstart/archive/v0.1.7.zip",
   "minimumCoreVersion": "0.7.2",
   "compatibleCoreVersion": "0.7.7",
   "scripts": ["quickstart.js","revealjs/reveal.js","revealjs/audio.js"]
