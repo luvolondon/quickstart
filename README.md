@@ -62,8 +62,9 @@ Create a JournalEntry with an image. Under "module settings" select this Journal
 
 ## b.2) Setup for "Slideshow"
 Create a master JournalEntry with a text entry containing the list of sections for the slideshow. Select this JournalEntry in the module settings for "Slideshow".
-The syntax of the liste of sections is taken from the RevealJS library, it is best to copy the html code into the JournalEntry in Source code mode. Example:
-```<section data-audio-src="Slideshow" data-journalentry="The Galaxy">
+The syntax of the list of sections is taken from the RevealJS library, it is best to copy the html code into the JournalEntry in Source code mode. Example:
+```
+<section data-audio-src="Slideshow" data-journalentry="The Galaxy">
 <h1>The Galaxy</h1>
 </section>
 <section data-audio-src="Slideshow" data-journalentry="The Senat">
@@ -71,7 +72,8 @@ The syntax of the liste of sections is taken from the RevealJS library, it is be
 </section>
 <section data-audio-src="Slideshow2" data-journalentry="The Sith Empire">
 <h1>The Sith Empire</h1>
-</section>```
+</section>
+```
 "data-audio-src" attribute references the name of a playlist-entry.
 "data-journalentry" attribute references the name of the JournalEntry containing an image for this slideshow section. You can also add text to the JournalEntry, it will be shown in the "Notes" popup for the GM when running the slideshow.
 
