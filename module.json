@@ -16,5 +16,5 @@
   "download": "https://github.com/luvolondon/quickstart/archive/v0.1.6.zip",
   "minimumCoreVersion": "0.7.2",
   "compatibleCoreVersion": "0.7.7",
-  "scripts": ["quickstart.js","revealjs/reveal.js"]
+  "scripts": ["quickstart.js","revealjs/reveal.js","revealjs/audio.js"]
 }

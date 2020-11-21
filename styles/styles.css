@@ -11,7 +11,6 @@
 .vtt #sidebar a[data-tab="items"],
 .vtt #sidebar a[data-tab="journal"],
 .vtt #sidebar a[data-tab="tables"],
-.vtt #sidebar a[data-tab="playlists"],
 .vtt #sidebar a[data-tab="compendium"],
 .vtt #sidebar #chat-controls,
 .vtt #notifications,
@@ -39,7 +38,6 @@
 .vtt.quickstart_game #sidebar a[data-tab="actors"],
 .vtt.quickstart_game #sidebar a[data-tab="journal"],
 .vtt.quickstart_game #sidebar a[data-tab="tables"],
-.vtt.quickstart_game #sidebar a[data-tab="playlists"],
 .vtt.quickstart_game #sidebar a[data-tab="compendium"],
 .vtt.quickstart_game #sidebar #chat-controls,
 .vtt.quickstart_game #notifications,
@@ -56,7 +54,7 @@
 }
 
 #quickstart_intro {
-    background-image: url(../images/intro/intro.jpg);
+    
     background-size: cover;
     position:absolute;
     width:100%;
@@ -72,6 +70,31 @@
     
 }
 
+#quickstart_slideshow_notes.window-app .window-content {
+    background:none;
+    color:white;
+}
+
+#quickstart_slideshow_notes .controls .left {
+    font-size: 3rem;
+    cursor:pointer;
+}
+
+#quickstart_slideshow_notes .controls .right {
+    font-size: 3rem;
+    position: absolute;
+    right: 10px;
+    cursor:pointer;
+}
+
 #quickstart_gm .dialog-button {
     margin-bottom:3px;
+}
+
+.reveal .controls {
+   
+    bottom: 120px !important;
+    right: auto !important;
+    left: 70px !important;
+  
 }
