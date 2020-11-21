@@ -6,9 +6,7 @@ a) Direct Login Page
 b) Game setup steps
 
 
-===========================================================================================================
-a) Direct Login Page
-===========================================================================================================
+# a) Direct Login Page
 
 Send new users an URL to show them a nice intro page and let them enter the game with a single button click.
 
@@ -45,9 +43,7 @@ server {
 The above also adds a language code to the URL so that the login page can be shown with localized text. 
 
 
-===========================================================================================================
-b) Game setup steps (still work-in-progress)
-===========================================================================================================
+# b) Game setup steps (still work-in-progress)
 
 The GM has a little control window to step through some initial game stages. The user interface of the players is synced to these stages:
  - "Welcome Screen": Shows an intro image, removes all unneeded UI and allows the GM to welcome the players in A/V chat
@@ -61,14 +57,10 @@ The GM has a little control window to step through some initial game stages. The
 ![Step control for GM](https://github.com/luvolondon/quickstart/blob/main/screens/screen2.jpg)
 
 
-===============================
-b.1) Setup for "Welcome Screen"
-===============================
+## b.1) Setup for "Welcome Screen"
 Create a JournalEntry with an image. Under "module settings" select this JournalEntry for "Welcome Screen".
 
-===============================
-b.2) Setup for "Slideshow"
-===============================
+## b.2) Setup for "Slideshow"
 Create a master JournalEntry with a text entry containing the list of sections for the slideshow. Select this JournalEntry in the module settings for "Slideshow".
 The syntax of the liste of sections is taken from the RevealJS library, it is best to copy the html code into the JournalEntry in Source code mode. Example:
 ```<section data-audio-src="Slideshow" data-journalentry="The Galaxy">
