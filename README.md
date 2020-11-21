@@ -77,6 +77,7 @@ The syntax of the list of sections is taken from the RevealJS library, it is bes
 "data-audio-src" attribute references the name of a playlist-entry.
 "data-journalentry" attribute references the name of the JournalEntry containing an image for this slideshow section. You can also add text to the JournalEntry, it will be shown in the "Notes" popup for the GM when running the slideshow.
 
+![Slideshow Controls](https://github.com/luvolondon/quickstart/blob/main/screens/screen3.jpg)
 
 
 Change list:
