@@ -5,6 +5,7 @@ Atm the module contains two tools:
 a) Direct Login Page
 b) Game setup steps
 
+# This is currently on-hold. The slideshow functionality has been moved into an extra module "slideshow". This code will be adapted shortly.
 
 # a) Direct Login Page
 
